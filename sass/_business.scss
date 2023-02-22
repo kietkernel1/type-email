@@ -1,0 +1,27 @@
+.business{
+    background-color: var(--color-black);
+    padding: 60px 0 70px;
+
+    &__content{
+        display: grid;
+        grid-template-columns: 585px 535px;
+        column-gap: 80px;
+    }
+
+    &__left{
+        align-self: center;
+
+        &__heading{
+            color: var(--color-white);
+        }
+
+        &__text{
+            color: var(--color-grayb5);
+            margin-bottom: 40px;
+        }
+    }
+
+    &__button{
+        padding: 12px 25px;
+    }
+}

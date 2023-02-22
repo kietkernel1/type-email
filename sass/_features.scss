@@ -1,0 +1,36 @@
+.features{
+    &__content{
+        display: flex;
+        align-items: center;
+        gap: 0 85px;
+    }
+
+    &__left{
+        max-width: 666px;
+    }
+
+    &__right{
+        max-width: 550px;
+        .text--normal{
+            margin-bottom: 70px;
+        }
+
+        .text--normal::after{
+            position: relative;
+            left: 11px;
+            bottom: 3px;
+            content: "  ";
+            height: 2px;
+            width: 27px;
+            background-color: var(--color-primary);
+            display: inline-block;
+            
+        }
+
+        .button{
+            padding: 17px 58px;
+            font-size: 16px;
+        }
+
+    }
+}

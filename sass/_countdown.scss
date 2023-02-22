@@ -1,0 +1,27 @@
+.countdown{
+    background-color: var(--color-primary-yellow);
+
+    &__content{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__item{
+        margin-top: 69px;
+        margin-bottom: 50px;
+    }
+
+    &__number{
+        font-size: 4.4rem;
+        line-height: calc(55 / 44);
+        margin-bottom: 22px;
+        text-align: center;
+        color: var(--color-black);
+    }
+
+    &__des{
+        font-size: 1.8rem;
+        line-height: calc(28 / 18);
+        color: var(--color-gray4f);
+    }
+}
