@@ -88,6 +88,15 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--color-grayb5);
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 .wrapper {
@@ -117,6 +126,14 @@ a {
   background: linear-gradient(93.52deg, #E6FF4B 8.71%, #00BD82 98.16%);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .text {
@@ -185,26 +202,33 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.header__logo {
-  display: flex;
-  align-items: center;
-  gap: 0 15px;
-  font-size: 2.5rem;
-  font-weight: 600;
-}
 .header__menu {
   display: flex;
   gap: 0 35px;
   padding-inline-start: 0;
   list-style: none;
 }
-.header-menu__item a {
-  font-size: 1.6rem;
-  color: var(--color-grayb5);
-  transition: color ease 0.4s;
+.header-menu__item {
+  position: relative;
 }
-.header-menu__item a:hover {
+.header-menu__item:hover a {
   color: var(--color-white);
+}
+.header-menu__item:hover::after {
+  width: 100%;
+}
+.header-menu__item a {
+  transition: color ease 0.3s;
+}
+.header-menu__item::after {
+  content: " ";
+  background: linear-gradient(93.52deg, #E6FF4B 8.71%, #00BD82 98.16%);
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.2s ease;
 }
 .header__login {
   font-size: 1.6rem;
@@ -238,7 +262,7 @@ a {
 }
 .header__started {
   font-size: 1.8rem;
-  padding: 18px 30px;
+  padding: 14.5px 30px;
 }
 .header__works {
   display: flex;
@@ -598,6 +622,40 @@ a {
 }
 .footer__button > a > p {
   line-height: 2.6666666667 !important;
+}
+.footer__bottom {
+  margin-top: 76px;
+  display: flex;
+}
+.footer__bottom {
+  color: var(--color-grayb5);
+}
+.footer__introduce {
+  max-width: 280px;
+}
+.footer__desc {
+  margin: 31px 0 15px;
+}
+.footer__title {
+  margin-bottom: 22px;
+  color: var(--color-white);
+}
+.footer__about {
+  margin: 0 69px 0 113px;
+}
+.footer__ingraince {
+  margin-left: 113px;
+  max-width: 239px;
+}
+.footer__menu {
+  word-break: break-all;
+}
+.footer__menu--link {
+  line-height: 2.6666666667;
+  transition: color 0.2s linear;
+}
+.footer__menu--link:hover {
+  color: var(--color-white);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -9,14 +9,6 @@
         align-items: center;
     }
 
-    &__logo{
-        display: flex;
-        align-items: center;
-        gap: 0 15px;
-        font-size: 2.5rem;
-        font-weight: 600;
-    }
-
     &__menu{
         display: flex;
         gap: 0 35px;
@@ -25,15 +17,34 @@
     }
     
     &-menu__item{
-        a{  
-            font-size: 1.6rem;
-            color: var(--color-grayb5);
-            transition: color ease .4s;
-            &:hover{
+        position: relative;
+
+        &:hover{
+            a{
                 color: var(--color-white);
             }
+
+            &::after{
+                width: 100%;
+            }
+        }
+        a{  
+            transition: color ease .3s;
+        }
+
+        &::after{
+            content: " ";
+            background: linear-gradient(93.52deg, #E6FF4B 8.71%, #00BD82 98.16%);
+            width: 0%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .2s ease;
         }
     }
+
+    
 
     &__login{
         font-size: 1.6rem;
@@ -71,7 +82,7 @@
 
     &__started{
         font-size: 1.8rem;
-        padding: 18px 30px;
+        padding: 14.5px 30px;
     }
 
     &__works{

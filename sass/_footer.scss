@@ -20,4 +20,46 @@
             line-height: calc(48 / 18) !important;
         }
     }
+
+    &__bottom{
+        margin-top: 76px;
+        display: flex;
+    }
+    
+    &__bottom{
+        color: var(--color-grayb5);
+    }
+
+    &__introduce{
+        max-width: 280px;
+    }
+
+    &__desc{
+        margin: 31px 0 15px;
+    }
+
+    &__title{
+        margin-bottom: 22px;
+        color: var(--color-white);
+    }
+
+    &__about{
+        margin: 0 69px 0 113px;
+    }
+
+    &__ingraince{
+        margin-left: 113px;
+        max-width: 239px;
+    }
+
+    &__menu{
+        word-break: break-all;
+        &--link{
+            line-height: calc(48/ 18);
+            transition: color .2s linear;
+            &:hover{
+                color: var(--color-white);
+            }
+        }
+    }
 }

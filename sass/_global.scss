@@ -5,6 +5,14 @@ body{
 
 a{
     text-decoration: none;
+    color: var(--color-grayb5);
+}
+
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
 }
 
 .wrapper{   
@@ -35,7 +43,13 @@ a{
     -webkit-background-clip: text;
     color: transparent;
 }
-
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
 .text{
     color: var(--color-gray54);
     &--center{
