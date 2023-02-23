@@ -3,19 +3,19 @@
 
     &__content{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 0 144px;
     }
 
     &__item{
         margin-top: 69px;
-        margin-bottom: 50px;
+        margin-bottom: 47px;
     }
 
     &__number{
         font-size: 4.4rem;
         line-height: calc(55 / 44);
         margin-bottom: 22px;
-        text-align: center;
         color: var(--color-black);
     }
 
@@ -23,5 +23,18 @@
         font-size: 1.8rem;
         line-height: calc(28 / 18);
         color: var(--color-gray4f);
+    }
+
+    @include maxWidth(1023px){
+        padding: 61px 0 82px;
+        &__content{
+            flex-direction: column;
+            gap: 64px 0;
+        }
+
+        &__item{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
     }
 }

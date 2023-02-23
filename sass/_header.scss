@@ -2,7 +2,7 @@
     padding-top: 48px;
     margin-bottom: 360px;
     background-color: var(--color-black);
-    max-height: 890px;
+    max-height: 891px;
     &__top{
         display: flex;
         justify-content: space-between;
@@ -14,6 +14,10 @@
         gap: 0 35px;
         padding-inline-start: 0;
         list-style: none;
+
+        @include maxWidth(1023px){
+            display: none;
+        }
     }
     
     &-menu__item{
@@ -44,17 +48,18 @@
         }
     }
 
-    
-
     &__login{
         font-size: 1.6rem;
         color: var(--color-white);
         padding: 9px 25px;
         line-height: 1.625;
-        font-weight: 600;
         background-color: rgba(var(--color-gray-opacity), .2); //rgba just apply var() with --color-grayb5-opacity in format of rgb color
         border-radius: 6px;
         transition: all .2s linear;
+
+        p{
+            width: 50px;
+        }
         &:hover{
             background-color: rgba(var(--color-gray-opacity), 1);
            color: var(--color-black);
@@ -62,7 +67,7 @@
     }
 
     &__content{
-        max-width: 840px;
+        max-width: 837px;
         margin: 83px auto 88px auto;
     }
 
@@ -91,6 +96,69 @@
         gap: 0 17px;
         font-size: 1.8rem;
         color: var(--color-white);
-        line-height: 1;
+        line-height: calc(48 / 18);
+    }
+
+    &__image{
+        height: 553px;
+        width: 1199px;
+        margin: 0 auto;
+    }
+
+    @include maxWidth(1023px){
+        margin-bottom: 136px;
+        max-height: 572px;
+        .logo{
+            font-size: 1.4rem;
+            line-height: 1;
+            gap: 0 12px;
+        }
+        &__logo{
+            width: 17px;
+            height: 15px;
+        }
+
+        &__login{
+            padding: 7px 30px;
+            font-size: 1.2rem;
+            line-height: calc(18 / 12);
+
+            p{
+                width: 36px;
+            }
+        }
+
+        &__content{
+            max-width: 281px;
+            margin: 55px auto 64px auto;
+        }
+
+        &__heading{
+            font-size: 3rem;
+            line-height: calc(40 / 30);
+            text-align: center;
+        }
+
+        &__buttons{
+            margin-top: 35px;
+            gap: 0 20px;
+        }
+
+        &__works{
+            span{
+                display: none;
+            }
+        }
+
+        &__started{
+            font-size: 1.4rem;
+            padding: 11px 19px 12px 20px;
+            line-height: calc(18 / 14);
+        }
+
+        &__image{
+            height: 175px;
+            width: 341px;
+        }
     }
 }

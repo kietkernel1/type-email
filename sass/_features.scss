@@ -2,7 +2,7 @@
     &__content{
         display: flex;
         align-items: center;
-        gap: 0 85px;
+        gap: 64px 85px;
     }
 
     &__left{
@@ -10,9 +10,9 @@
     }
 
     &__right{
-        max-width: 550px;
+        max-width: 548px;
         .text--normal{
-            margin-bottom: 70px;
+            margin: 28px 0 51px;
         }
 
         .text--normal::after{
@@ -28,9 +28,47 @@
         }
 
         .button{
-            padding: 17px 58px;
+            padding: 16px 58px 17px;
             font-size: 16px;
         }
 
+    }
+
+    @include maxWidth(1023px){
+        &__content{
+            flex-direction: column;
+        }
+        &__left{
+            width: 350px;
+            height: 353px;
+        }
+
+        &__container{
+            max-width: 296px;
+            margin: 0 auto;
+        }
+        &__right{
+            max-width: 327px;
+
+            .text{
+                font-size: 1.4rem;
+                line-height: calc(24 / 14);
+            }
+            .text--normal{
+                margin: 22px 0 49px;
+                font-size: 1.4rem;
+                line-height: calc(26 / 14);
+            }
+            .button{
+                width: 327px;
+                justify-content: center;
+            }
+        }
+
+        &__heading{
+            font-size: 3rem;
+            line-height: calc(40 / 30);
+            margin-bottom: 12px;
+        }
     }
 }

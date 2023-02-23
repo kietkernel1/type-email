@@ -18,7 +18,9 @@
         <div class="container">
           <div class="header__top">
               <a href="index.html" class="logo">
-                <img src="/image/logo-icon.svg" alt="logo icon">
+                <div class="header__logo">
+                  <img src="/image/logo-icon.svg" alt="logo icon" class="img"> 
+                </div>
                 <span class="text--primary">Type Email</span>
               </a>
 
@@ -37,7 +39,9 @@
                 </li>
               </ul>
 
-              <a href="#" class="header__login">Login</a>
+              <a href="#" class="header__login text--center">
+                <p>Login</p>
+              </a>
           </div>
 
           <div class="header__content">
@@ -55,9 +59,11 @@
               </a>
             </div>
           </div>
-
-          <img src="/image/img1.png" alt="">
         </div>
+          <div class="header__image">
+            <img src="/image/img1.png" alt="" class="img">
+          </div>
+        
 
       </div>
 
@@ -66,16 +72,16 @@
           <div class="container">
             <div class="countdown__content">
               <div class="countdown__item">
-                <h2 class="countdown__number">17,000+</h2>
-                <span class="countdown__des">Companies using Sendlance</span>
+                <h2 class="countdown__number text--center">17,000+</h2>
+                <p class="countdown__des text--center">Companies using Sendlance</p>
               </div>
               <div class="countdown__item">
-                <h2 class="countdown__number">40 million+</h2>
-                <span class="countdown__des">Companies using Sendlance</span>
+                <h2 class="countdown__number text--center">40 million+</h2>
+                <p class="countdown__des text--center">Emails sent daily</p>
               </div>
               <div class="countdown__item">
-                <h2 class="countdown__number" class="countdown__number">20.000+</h2>
-                <span class="countdown__des" class="countdow__des">Companies using Sendlance</span>
+                <h2 class="countdown__number text--center">20.000+</h2>
+                <p class="countdown__des text--center" class="countdow__des">Users on sendlance</p>
               </div>
             </div>
           </div>
@@ -107,8 +113,10 @@
 
                 <div class="newsletter__list">
                   <div class="newsletter__item">
-                    <div class="item-logo">
-                      <img src="/image/icon-home.png" alt="">
+                    <div class="item-logo icon">
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 4.5L3 18H7.5V30H28.5V18H33L18 4.5ZM18 12.75C21.51 12.75 24.69 14.145 27 16.41L25.2 18.18C23.2812 16.2913 20.6924 15.2396 18 15.255C15.18 15.255 12.63 16.365 10.8 18.18L9 16.41C11.4031 14.0557 14.6358 12.741 18 12.75ZM18 17.745C20.1 17.745 22.005 18.585 23.4 19.95L21.6 21.705C20.6379 20.7657 19.3446 20.243 18 20.25C16.59 20.25 15.315 20.805 14.4 21.705L12.6 19.95C14.0409 18.5348 15.9804 17.7429 18 17.745ZM18 22.755C19.41 22.755 20.55 23.865 20.55 25.245C20.55 26.625 19.41 27.75 18 27.75C16.59 27.75 15.45 26.625 15.45 25.245C15.45 23.865 16.59 22.755 18 22.755Z" fill="currentColor"/>
+                        </svg>                        
                     </div>
 
                     <div class="item-content">
@@ -128,8 +136,12 @@
                   </div>
 
                   <div class="newsletter__item">
-                    <div class="item-logo">
-                      <img src="/image/icon-medical.png" alt="">
+                    <div class="item-logo icon">
+                      <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.3586 9.21625V11.9331C22.3475 12.9488 21.943 13.9207 21.2302 14.6443C20.5173 15.3679 19.5516 15.7869 18.5361 15.8132H12.4246C11.6098 15.8295 10.8336 16.1638 10.2619 16.7447C9.69023 17.3256 9.36842 18.1071 9.36523 18.9221V24.7478C9.36523 26.4057 10.807 27.3822 12.4246 27.8576C14.4143 28.4798 16.5465 28.4798 18.5361 27.8576C20.0768 27.4115 21.5955 26.5138 21.5955 24.7487V22.4157H15.484V21.638H24.6549C26.4329 21.638 27.0961 20.3977 27.7143 18.5364C28.3424 16.5108 28.3424 14.3425 27.7143 12.3169C27.2747 10.5472 26.4356 9.21533 24.6549 9.21533L22.3586 9.21625ZM18.9218 23.971C19.1533 23.9676 19.3805 24.0331 19.5746 24.1593C19.7688 24.2854 19.9209 24.4665 20.0117 24.6795C20.1026 24.8925 20.1279 25.1276 20.0846 25.3551C20.0413 25.5825 19.9313 25.7919 19.7686 25.9566C19.6058 26.1212 19.3978 26.2337 19.1709 26.2797C18.944 26.3258 18.7085 26.3032 18.4945 26.2149C18.2805 26.1266 18.0976 25.9766 17.9691 25.784C17.8406 25.5914 17.7724 25.3649 17.7731 25.1334C17.7719 24.9815 17.8007 24.8309 17.8578 24.6902C17.9149 24.5495 17.9992 24.4214 18.106 24.3133C18.2127 24.2052 18.3397 24.1193 18.4797 24.0604C18.6196 24.0015 18.7699 23.9708 18.9218 23.9701V23.971Z" fill="currentColor"/>
+                        <path d="M15.3483 2.67608C14.3684 2.67728 13.3903 2.76093 12.4244 2.92614C9.83492 3.38322 9.36502 4.34043 9.36502 6.10646V8.43766H15.4838V9.21533H7.06863C6.16795 9.19869 5.29037 9.50091 4.59093 10.0686C3.89149 10.6363 3.4152 11.433 3.2462 12.3178C2.67184 14.3509 2.67184 16.5033 3.2462 18.5364C3.6813 20.3474 4.72003 21.638 6.49797 21.638H8.602V18.8433C8.62435 17.8385 9.03489 16.8814 9.74752 16.1727C10.4602 15.464 11.4195 15.0587 12.4244 15.0419H18.5359C18.941 15.039 19.3415 14.9561 19.7146 14.7982C20.0876 14.6403 20.4259 14.4104 20.7101 14.1217C20.9942 13.833 21.2186 13.491 21.3705 13.1155C21.5224 12.74 21.5988 12.3382 21.5953 11.9331V6.10646C21.5439 5.30015 21.2083 4.53818 20.6481 3.95592C20.088 3.37365 19.3396 3.00879 18.5359 2.92614C17.4822 2.75378 16.4159 2.67013 15.3483 2.67608V2.67608ZM12.0397 4.55203C12.2709 4.54858 12.4979 4.61393 12.6918 4.73978C12.8858 4.86563 13.0379 5.0463 13.129 5.25882C13.22 5.47135 13.2458 5.70614 13.2031 5.93336C13.1604 6.16059 13.0511 6.36999 12.8891 6.53495C12.7271 6.69991 12.5197 6.813 12.2933 6.85983C12.0669 6.90667 11.8317 6.88514 11.6175 6.79798C11.4034 6.71082 11.22 6.56197 11.0906 6.37034C10.9613 6.17871 10.8918 5.95295 10.8911 5.72174C10.8889 5.41449 11.0085 5.11888 11.2238 4.89964C11.4391 4.6804 11.7325 4.55541 12.0397 4.55203V4.55203Z" fill="currentColor"/>
+                        </svg>
+                        
                     </div>
                     <div class="item-content">
                       <h3 class="heading heading--small">
@@ -150,7 +162,7 @@
               </div>
 
               <div class="newsletter__image">
-                <img src="/image/img2.png" alt="img2">
+                <img src="/image/img2.png" alt="img2" class="img">
               </div>
             </div>
           </div>
@@ -160,17 +172,20 @@
           <div class="container--big">
             <div class="features__content">
               <div class="features__left">
-                <img src="/image/img3.png" alt="img3">
+                <img src="/image/img3.png" alt="img3" class="img">
               </div>
 
               <div class="features__right">
-                <h3 class="heading heading--medium">
-                  Create raving fans that keep buying over and over you get the point.
-                </h3>
-                <p class="text text--big">
-                  Unlock customer insights to grow your business faster. Store all your customer data collected from storefront to marketing channels in one central hub far easy use in every strategy. 
-                </p>
-                <p class="text--normal">Our open rate has tripled and our click rate on links is up at least 15%.</p>
+                <div class="features__container">
+                  <h3 class="features__heading heading heading--medium">
+                    Create raving fans that keep buying over and over you get the point.
+                  </h3>
+                  <p class="text text--big">
+                    Unlock customer insights to grow your business faster. Store all your customer data collected from storefront to marketing channels in one central hub far easy use in every strategy. 
+                  </p>
+                  <p class="text--normal">Our open rate has tripled and our click rate on links is up at least 15%.</p>
+                </div>
+                
                 <a href="#" class="button button--primary">
                   Learn more
                 </a>
@@ -185,7 +200,7 @@
 
             <div class="service__cards">
               <a href="#" class="service__card">
-                <div class="service-card__icon">
+                <div class="service-card__icon icon">
                   <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_3_571)">
                     <path d="M26 16.875V4.125C26 2.94917 25.0547 2 23.8836 2H4.1164C2.94533 2 2 2.94917 2 4.125V16.875C2 18.0508 2.94533 19 4.1164 19H23.8836C25.0547 19 26 18.0508 26 16.875ZM24.1517 3.96917C24.6173 4.43667 24.3633 4.91833 24.1093 5.15917L18.381 10.4292L23.8836 16.1808C24.0529 16.3792 24.1658 16.6908 23.9683 16.9033C23.7848 17.13 23.3616 17.1158 23.1781 16.9742L17.0123 11.69L13.9929 14.4525L10.9877 11.69L4.82187 16.9742C4.63845 17.1158 4.21517 17.13 4.03175 16.9033C3.83422 16.6908 3.94709 16.3792 4.1164 16.1808L9.61905 10.4292L3.89065 5.15917C3.63668 4.91833 3.38272 4.43667 3.84832 3.96917C4.31393 3.50167 4.79365 3.72833 5.18871 4.06833L13.9929 11.2083L22.8113 4.06833C23.2063 3.72833 23.6861 3.50167 24.1517 3.96917Z" fill="currentColor"/>
@@ -209,8 +224,8 @@
                 </div>
               </a>
               
-              <a href="#" class="service__card">
-                <div class="service-card__icon">
+              <a href="#" class="service__card service__card--active">
+                <div class="service-card__icon icon">
                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 0C6.71484 0 0 5.0332 0 11.25C0 15.6445 3.36914 19.4414 8.26758 21.293L4.99805 30L14.4023 22.4766C14.6016 22.4824 14.7949 22.5 15 22.5C23.2852 22.5 30 17.4668 30 11.25C30 5.0332 23.2852 0 15 0ZM7.5 13.752C6.12305 13.752 4.99805 12.6328 4.99805 11.25C4.99805 9.86719 6.11719 8.74805 7.5 8.74805C8.87695 8.74805 10.002 9.86719 10.002 11.25C10.002 12.6328 8.87695 13.752 7.5 13.752ZM15 13.752C13.623 13.752 12.498 12.6328 12.498 11.25C12.498 9.86719 13.6172 8.74805 15 8.74805C16.377 8.74805 17.502 9.86719 17.502 11.25C17.502 12.6328 16.377 13.752 15 13.752ZM22.5 13.752C21.123 13.752 19.998 12.6328 19.998 11.25C19.998 9.86719 21.1172 8.74805 22.5 8.74805C23.877 8.74805 25.002 9.86719 25.002 11.25C25.002 12.6328 23.877 13.752 22.5 13.752Z" fill="currentColor"/>
                     </svg>
@@ -229,7 +244,7 @@
               </a>
 
               <a href="#" class="service__card">
-                <div class="service-card__icon">
+                <div class="service-card__icon icon">
                   <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_3_571)">
                     <path d="M26 16.875V4.125C26 2.94917 25.0547 2 23.8836 2H4.1164C2.94533 2 2 2.94917 2 4.125V16.875C2 18.0508 2.94533 19 4.1164 19H23.8836C25.0547 19 26 18.0508 26 16.875ZM24.1517 3.96917C24.6173 4.43667 24.3633 4.91833 24.1093 5.15917L18.381 10.4292L23.8836 16.1808C24.0529 16.3792 24.1658 16.6908 23.9683 16.9033C23.7848 17.13 23.3616 17.1158 23.1781 16.9742L17.0123 11.69L13.9929 14.4525L10.9877 11.69L4.82187 16.9742C4.63845 17.1158 4.21517 17.13 4.03175 16.9033C3.83422 16.6908 3.94709 16.3792 4.1164 16.1808L9.61905 10.4292L3.89065 5.15917C3.63668 4.91833 3.38272 4.43667 3.84832 3.96917C4.31393 3.50167 4.79365 3.72833 5.18871 4.06833L13.9929 11.2083L22.8113 4.06833C23.2063 3.72833 23.6861 3.50167 24.1517 3.96917Z" fill="currentColor"/>
@@ -394,6 +409,7 @@
                         4.5 Rating Capture
                       </p>
                     </div>
+          
                   </div>
                 </div>
               </div>
