@@ -6,6 +6,7 @@
         display: grid;
         grid-template-columns: 583px 535px;
         column-gap: 80px;
+        row-gap: 60px;
     }
 
     &__left{
@@ -24,5 +25,39 @@
 
     &__button{
         padding: 12px 20px 12px 25px;
+    }
+
+    @include maxWidth(1023px){
+        
+        &__content{
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+        }
+
+        &__wrapper{
+            max-width: 286px;
+            margin: 0 auto;
+        }
+        &__left{
+            max-width: 326px;
+            justify-self: center;
+            &__heading{
+                font-size: 3rem;
+                line-height: calc(40 / 30);
+                margin-bottom: 10px;
+            }
+    
+            &__text{
+                font-size: 1.4rem;
+                line-height: calc(24 / 14);
+                margin-bottom: 63px;
+            }
+        }
+
+        &__button{
+            width: 326px;
+            padding: 21px 0 20px;
+        }
+
     }
 }

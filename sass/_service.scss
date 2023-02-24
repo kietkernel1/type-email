@@ -8,7 +8,7 @@
     &__cards{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        column-gap: 23px;
+        gap: 22px 23px;
     }
 
     &__card{
@@ -28,8 +28,6 @@
         }
     }
 
-
-
     &-card__heading{
         margin-bottom: 13px;
         margin-top: 46px;
@@ -37,6 +35,16 @@
 
     &-card__icon{
         background-color: rgba($color: #000000, $alpha: .08);
+
+    }
+
+    @include maxWidth(1023px){
+        margin: 60px auto 34px;
+
+        &__title{
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
 
     }
 }
